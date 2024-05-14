@@ -1,0 +1,105 @@
+body {
+    background : #f2e6b5; /* le body c'est le fond de la page, sa couleur se définit avec # */
+    margin : 0; /* on efface la marge sinon il y a un rebord */
+}
+
+header {
+    display : flex; /* mets les boutons page en face du logo */
+    position : fixed; /* fixe le haut de page lorsqu'on descend */
+    width : 100%; /* créer la bande du haut de page */
+    top : 0; /* commence a zéro, en haut à gauche de la page */
+    background: #ccc5f8; /* il s'agit du haut de la page */
+    /* height : 100px; */ /* définit la taille du bloc en pixel */
+    margin : 0 0 50px 0;
+    justify-content: space-between; /* mets le logo à gauche et le reste à droite */
+}
+
+main{
+    background: #cccccc; /* il s'agit du corps de la page */
+    /* height : 1000px; */
+    margin : 200px 0 50px 0;
+    
+}
+
+footer {
+    background: #ccc5f8; /* il s'agit du bas de page */
+    height : 100px;
+}
+
+
+section {
+    /* "background : #aaaaaa" si même couleur mais ici on les différencie. Il ne faut pas mettre les infos des sections dans main !!! */
+        height : 300px;
+        margin : 0 0 30px 0;
+}
+
+#pres{ /* On utilise un # pour déclarer un identifiant */
+    background : #f9c1a1;
+} 
+
+#actu {
+    background : #a9c1f1;
+}
+
+#offre {
+    background : #c9f1a1;
+}
+
+a {  /* modifie l'aspect des liens */
+    text-decoration : none; /* enlève le trait en dessous de tous les liens */
+}
+
+/* possible de colorer nav : nav{background : #......;}, mais il faut modifier d'autres choses */
+
+nav {
+    display : flex;
+    background: #e6b8c2;
+}
+
+nav a { /* définit tous les boutons/liens de la navigation */
+    display : flex; /* Organise les boutons pages 1 à 3 en lignes */
+    background : #000000; /* définit la couleur du bouton */
+    color : #ffffff; /* définit la couleur du texte */
+    font-size : 18px; /* définit la taille du texte en pixel */
+    margin : 10px; /* rajoute une marge à gauche et droite (il y a donc le double si 2 boutons sont à côté) */
+    padding : 10px; /* définit la marge intérieur (autour du bouton) */
+    border-radius: 5px; /* arrondi des bords du bouton */ 
+}
+
+nav a:hover { /* donne un effet "cliquable" aux boutons pages */
+    background : #f684ec; 
+    color : #46f8c6;
+    transition: 1s; /* transition qui arrive lentement (taille, couleur, ...) */
+    
+}
+
+#pres a {
+    background : #ccffee; /* définit la couleur du bouton */
+    color : #000000; /* définit la couleur du texte */
+    font-size : 30px; /* définit la taille du texte en pixel */
+}
+
+.logo {
+    display : flex;
+    width : 145px; /* taille du logo avec "height" */
+    height : 80px;
+    /* background : #db4656; */
+    margin : 10px 30px;
+    background-image: url(../images/Logo%20UBS.png); /* Rajoute le logo UBS + "../" permet de revenir en arrière sur un dossier*/
+    background-size: contain ; /* fait en sorte que le logo entre dans la taille de la case */
+    background-repeat: no-repeat ; /* evite de répéter le logo */
+}
+
+#actu a {
+    background : #ccffee; /* définit la couleur du bouton */
+    color : #000000; /* définit la couleur du texte */
+    font-size : 30px; /* définit la taille du texte en pixel */
+}
+
+#offre a {
+    background : #ccffee; /* définit la couleur du bouton */
+    color : #000000; /* définit la couleur du texte */
+    font-size : 30px; /* définit la taille du texte en pixel */
+}
+
+/* footer .logo = le logo qui se trouve dans footer */
