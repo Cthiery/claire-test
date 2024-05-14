@@ -1,1 +1,76 @@
-coucou 
+<!DOCTYPE html> <!-- Indique au navigateur le language utilisé, ex : HTML, PHP, ... -->
+
+<html lang="fr"> <!-- Détermine la langue pour l'ensemble du texte de la page html -->
+
+    <head> <!-- contient les informations relatives à la page et établit le lien vers le ficheir CSS qui permettra de faire la mise en forme -->
+    
+       <meta charset="utf-8"> 
+       <!-- codage de caractères -->
+       
+       <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Indique comment un navigateur doit afficher la page sur différents appareils -->
+       
+       <title>Projet 1</title> <!-- Permet d'afficher un titre dans l'onglet du navigateur -->
+       <link href="css/styles.css" rel="stylesheet" media="all" /> <!-- Le premier fichier est celui au même niveau dan smla hiérarchisation, cela permet de créer un lien vers le fichier CSS permettant la mise en forme --> 
+     <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        
+    </head> <!-- Fin de la première partie non visible --> 
+    
+    <body> <!-- partie visible : construction de la page -->
+    
+        <header> 
+            
+            <div class="logo"> </div> <!-- "class" similaire à "id" mais la class peut s'utiliser autant de fois que voulu. Même règles : uniquement en minuscule et pas de caractères spéciaux ! --> 
+            
+            <nav>
+                <a href= " https://www.google.fr " target="blank"> Page 1 </a> <!-- target permet d'ouvrir dans un nouvel onglet. "Page 1" le lien renvoit vers la page 1 -->
+                <a href= " https://www.google.fr " target="blank"> Page 2 </a>
+                <a href= " https://www.google.fr " target="blank"> Page 3 </a>
+            </nav>
+        
+        
+        </header> <!-- en-tête du site --> <!-- il est possible de rajouter un identifiant comme les sections -->
+        
+        
+        <main>  
+            
+            <section id="pres"> 
+                <a href= "#"> lien présentation </a>
+            </section> <!-- pas de caractères spéciaux et en miniscule uniquement ! Cela permet au développeur de les reconnaitre par la suite. Un identifiant ne peut être utilisé qu'une seule fois -->
+            
+            <section id="actu"> 
+                <a href= "#"> lien présentation </a>
+            </section>
+            
+            <section id="offre"> 
+                <a href= "#"> lien présentation </a>
+            </section>
+    
+            
+        </main>
+        
+        
+        
+        
+        <footer>  </footer> <!-- bas de page --> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+    
+    
+    
+    
+
+</html>
