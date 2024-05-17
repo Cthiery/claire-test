@@ -1,17 +1,16 @@
 body {
-    background : #f2e6b5; /* le body c'est le fond de la page, sa couleur se définit avec # */
-    margin : 0; /* on efface la marge sinon il y a un rebord */
+    background : #f2e6b5; 
+    margin : 0; 
 }
 
 header {
-    display : flex; /* mets les boutons page en face du logo */
-    position : fixed; /* fixe le haut de page lorsqu'on descend */
-    width : 100%; /* créer la bande du haut de page */
-    top : 0; /* commence a zéro, en haut à gauche de la page */
-    background: #ccc5f8; /* il s'agit du haut de la page */
-    /* height : 100px; */ /* définit la taille du bloc en pixel */
+    display : flex; 
+    position : fixed;
+    width : 100%; 
+    top : 0; 
+    background: #ccc5f8;
     margin : 0 0 50px 0;
-    justify-content: space-between; /* mets le logo à gauche et le reste à droite */
+    justify-content: space-between; 
 }
 
 main{
